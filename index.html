@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- 🌍 META & TITLE -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>vQatarairways — Virtual Airline</title>
+  <meta name="description" content="vQatarairways — a realistic and friendly virtual airline. Join our crew, view our fleet, and fly around the world.">
+
+  <!-- 🎨 STYLES -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ✈️ FAVICON -->
+  <link rel="icon" href="data:image/svg+xml,
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>
+    <rect width='32' height='32' rx='4' fill='%23800033'/>
+    <text x='16' y='21' font-size='16' text-anchor='middle' fill='white' font-family='Arial'>vQ</text>
+  </svg>">
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-text">vQatarairways</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#fleet">Fleet</a></li>
+          <li><a href="#routes">Routes</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#pirep">PIREP</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Welcome to vQatarairways</h1>
+        <p>Experience the next generation of virtual aviation with realistic operations, a friendly community, and global destinations.</p>
+        <div class="hero-cta">
+          <a href="#join" class="btn primary">Join the Crew</a>
+          <a href="#fleet" class="btn ghost">Explore Our Fleet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>vQatarairways is a community-driven virtual airline that simulates real-world Qatar Airways operations. We welcome all pilots — from beginner to expert — and offer events, rank progression, and professional training.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <h3>🌍 Realism</h3>
+          <p>We follow real-world procedures, routes, and ATC standards.</p>
+        </div>
+        <div class="card">
+          <h3>🧑‍✈️ Training</h3>
+          <p>Our mentors and training captains will help you improve your piloting skills.</p>
+        </div>
+        <div class="card">
+          <h3>🎯 Events</h3>
+          <p>Participate in group flights and earn hours to climb the ranks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FLEET SECTION ================= -->
+  <section id="fleet" class="section alt-bg">
+    <div class="container">
+      <h2>Our Fleet</h2>
+      <div class="fleet-grid">
+        <div class="fleet-item">
+          <h4>Airbus A320</h4>
+          <p>Efficient narrow-body jet for regional and medium routes.</p>
+        </div>
+        <div class="fleet-item">
+          <h4>Airbus A330</h4>
+          <p>Versatile wide-body aircraft for mid-range international flights.</p>
+        </div>
+        <div class="fleet-item">
+          <h4>Airbus A350</h4>
+          <p>Our flagship long-haul aircraft — efficient, quiet, and modern.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ROUTES SECTION ================= -->
+  <section id="routes" class="section">
+    <div class="container">
+      <h2>Popular Routes</h2>
+      <table class="routes-table">
+        <thead>
+          <tr><th>From</th><th>To</th><th>Distance</th><th>Aircraft</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>DOH</td><td>LHR</td><td>3,400 km</td><td>A350</td></tr>
+          <tr><td>DOH</td><td>WAW</td><td>4,200 km</td><td>A330</td></tr>
+          <tr><td>DOH</td><td>DXB</td><td>380 km</td><td>A320</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= JOIN SECTION ================= -->
+  <section id="join" class="section alt-bg">
+    <div class="container">
+      <h2>Join vQatarairways</h2>
+      <form id="joinForm">
+        <input id="name" type="text" placeholder="Full Name" required>
+        <input id="callsign" type="text" placeholder="Preferred Callsign" required>
+        <select id="sim">
+          <option>Microsoft Flight Simulator</option>
+          <option>X-Plane</option>
+          <option>Prepar3D</option>
+        </select>
+        <input id="email" type="email" placeholder="Email" required>
+        <button type="submit" class="btn primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= PIREP SECTION ================= -->
+  <section id="pirep" class="section">
+    <div class="container">
+      <h2>Submit PIREP</h2>
+      <form id="pirepForm">
+        <input id="pilot" type="text" placeholder="Pilot Callsign" required>
+        <input id="from" type="text" placeholder="Departure ICAO (e.g. WAW)" required>
+        <input id="to" type="text" placeholder="Arrival ICAO (e.g. DOH)" required>
+        <input id="aircraft" type="text" placeholder="Aircraft (e.g. A330)" required>
+        <button type="submit" class="btn primary">Submit PIREP</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="section alt-bg">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:info@vqatarairways.example">info@vqatarairways.example</a></li>
+        <li><strong>Discord:</strong> <a href="#">Join our Discord</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> vQatarairways — Virtual Airline Project</p>
+      <p class="disclaimer">Not affiliated with Qatar Airways. Simulation only.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
