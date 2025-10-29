@@ -1,0 +1,79 @@
+:root {
+  --main-color: #7B1F3A;
+  --light-bg: #f7f7f7;
+  --radius: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+.container { max-width: 1000px; margin: auto; padding: 1rem; }
+
+/* HEADER */
+.site-header {
+  background: var(--main-color);
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-list a { color: white; text-decoration: none; }
+
+/* HERO */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 6rem 1rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://upload.wikimedia.org/wikipedia/commons/5/56/Qatar_A350-900.jpg') no-repeat center center/cover;
+}
+
+/* SECTIONS */
+.section { padding: 4rem 1rem; }
+.alt-bg { background: var(--light-bg); }
+h2 { color: var(--main-color); text-align: center; }
+
+/* TABLES */
+.routes-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.routes-table th, .routes-table td { border: 1px solid #ccc; padding: 0.5rem; text-align: center; }
+.routes-table th { background: var(--main-color); color: white; }
+
+/* FORMS */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
+}
+input, select, button {
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+}
+button {
+  background: var(--main-color);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+button:hover { background: #9c2d53; }
+
+/* FOOTER */
+.site-footer {
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
